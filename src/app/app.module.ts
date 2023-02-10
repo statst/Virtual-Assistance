@@ -1,18 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChatModule } from '@progress/kendo-angular-conversational-ui';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    imports: [BrowserModule, BrowserAnimationsModule, ChatModule],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
